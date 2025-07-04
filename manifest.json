@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Roblox Best Server Finder",
+  "version": "1.0",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://www.roblox.com/*",
+    "https://games.roblox.com/*",
+    "https://gamejoin.roblox.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.roblox.com/games/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "injector.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,4 @@
 # Roblox Best Server Finder
-#### Video Demo:  <URL HERE>
 #### Description:
 A Chrome extension that automatically joins to your preferred server region in Roblox because sometimes Roblox does not put you in the server region that you want, which leads to higher latency thus less satisying gaming experience. This project is greatly helped by the sources at credit section and AI-based software to help me learn many things.
 
